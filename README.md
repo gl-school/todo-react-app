@@ -4,13 +4,9 @@
 
 ## To do:
 
-### Local Storage
+### Add button to removed checked items?
 
-### Convert to using Reducer
-
-### Add button to removed checked items
-
-###
+### Add button responds to enter
 
 ###
 

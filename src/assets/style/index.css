@@ -16,21 +16,19 @@ code {
     monospace;
 }
 
-
 .container {
   width: min(100% - 30px, 1080px);
   margin-inline: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
-
-
-
 
 /*******************************************************************************
 
                               Form
 
 *******************************************************************************/
-
 
 h1 {
   font-weight: 700;
@@ -40,10 +38,14 @@ h1 {
   margin-top: 80px;
 }
 
-.form-btn {
+.form-items {
+  align-items: center;
+  display: flex;
+}
+
+button {
   background-color: #007bff;
   color: #ffffff;
-  padding: 10px 20px;
   font-size: 16px; 
   cursor: pointer; 
   border-radius: 5px; 
@@ -51,25 +53,27 @@ h1 {
   border: none;
   height: 40px;
   width: 70px;
+  line-height: 40px;
+  justify-content: center;
 }
 
 .form-btn:hover {
   background-color: #0400ff;
 }
 
-.form-input {
+input[type="text"] {
   height: 40px;
   width: 400px;
   margin-right: 15px;
   border-radius: 5px; 
   padding-left: 10px;
   font-weight: 600;
+  border: 1px solid black;
 }
 
-
-
-
-
+ul {
+  list-style: none;
+}
 
 
 /*******************************************************************************
@@ -77,6 +81,69 @@ h1 {
                               To Do List Items
 
 *******************************************************************************/
+
+.todo-box{
+  display: flex;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 8px;
+  align-items: center;
+}
+
+input[type='checkbox'] {
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  cursor: pointer;
+  accent-color: #008000;
+  margin-left: 10px;
+}
+
+.todo-text {
+  width: 80%;
+  margin: 0 8px;
+}
+
+.todo-icons {
+  display: flex;
+  margin-right: 5px;
+}
+
+.icon {
+  position: right;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.save {
+  margin-top: 8px;
+}
+
+.trash {
+  color: #808080;
+  background-color: #ffffff;
+}
+
+.trash:hover {
+  color: #5a5a5a;
+}
+
+.edit {
+  color: #0000ff;
+  background-color: #ffffff;
+}
+
+.edit:hover {
+  color: #0000b3;
+}
 
 
 
